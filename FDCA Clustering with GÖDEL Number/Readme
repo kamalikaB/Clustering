@@ -1,1 +1,52 @@
 
+# Avg and Median Method Clustering
+
+This repository implements clustering using the average and median methods. The code allows flexibility for updating the dataset, adjusting clustering parameters, and fine-tuning the algorithm based on the dataset.
+
+ Steps to Update and Run
+
+ 1. Update the Cell Length
+   - The cell length determines how the feature values are encoded. 
+  - You can update the cell length by modifying the configuration file or directly within the script where the 
+     encoding function is defined. 
+   - Make sure that the updated cell length is suitable for the dataset and does not cause overflow or underflow in 
+     the encoding process.
+
+ 2. Update the .csv File
+   - Download the latest dataset in `.csv` format.
+   - Replace the old `.csv` file in the repository or update the file path in the script accordingly. 
+   - Ensure that the dataset includes all required columns, and the new `.csv` file is consistent with the expected 
+     format.
+
+ 3. Preprocess the Dataset
+   - The dataset needs to be preprocessed to remove non-essential columns and scale/normalize the attributes.
+   - The following preprocessing steps should be performed:
+  - Remove non-essential columns: For instance, columns like `DEATH_EVENT` and `time` may need to be    
+     removed for clustering purposes.
+  - Normalize/Scale remaining attributes: Ensure that the feature values are normalized to a consistent scale (e.g., 
+    [0, 1] or Z-score normalization).
+ - Generate G{\"o}del numbers: Once the attributes are scaled, they will be encoded using the G{\"o}del  
+    numbering scheme.
+
+ 4. Change the Store Location
+   - Update the directory or file path where the results will be stored after running the clustering algorithm.
+   - In the script, locate the section where the output is saved (e.g., `output_dir`) and modify it to point to the new         
+     location.
+
+ 5. Adjust Iterations
+   - The number of iterations can be increased or decreased depending on the dataset's size and the desired    
+      precision of the clustering results.
+   - Modify the `iterations` variable or related parameter in the code to control how many iterations the algorithm 
+     should run.
+
+ 6. Run the Clustering Algorithm
+   - Once the above steps are completed, run the clustering algorithm using the avg and median methods.
+   - You can execute the code using Python by running:
+     ```bash
+     python clustering_script.py
+     ```
+
+ 7. Evaluate the Results
+   - After running the clustering algorithm, review the results and make sure the output file is stored at the correct 
+     location.
+   - Analyze the clustered data, ensuring that the results are accurate and consistent with the input dataset.
