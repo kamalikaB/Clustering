@@ -936,7 +936,8 @@ RCA.fit()
 
 # RCA = RCAC('StoneFlakes', 13, 2, data_drop_columns=['ID'], compare_with_others = True)
 # RCA.fit()
-
+# RCA = RCAC('gt_2015',13, 2, data_drop_columns=['TEY'], compare_with_others = True)
+# RCA.fit()
 # RCA = RCAC('Iris_11',11, 2, data_drop_columns=['Species'], compare_with_others = True)
 # RCA.fit()
 # RCA = RCAC('phoneme', 12, 2, data_drop_columns=['g','speaker'], compare_with_others = True)
