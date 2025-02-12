@@ -610,6 +610,34 @@ def freq_encoding(data):
       enc.append(t)
     enc
     return enc
+# import pandas as pd
+# import numpy as np
+
+# def categorical_to_binary(df, column):
+#     # Get unique values from the column in the order they first appear
+#     unique_values = list(dict.fromkeys(df[column]))
+#     # Determine the number of categories
+#     num_categories = len(unique_values)
+#     # Define the binary string length based on the number of unique categories
+#     binary_length = num_categories
+#     # Create a dictionary to map each unique value to a binary string
+#     mapping = {}
+#     for i in range(num_categories):
+#         binary_representation = bin(2 ** i)[2:].zfill(binary_length)
+#         mapping[unique_values[i]] = binary_representation
+#     # Create a new column with the mapped binary values
+#     df[f'{column}_binary'] = df[column].map(mapping)
+#     return df
+
+
+# data = {'Color': ['White', 'White', 'Red', 'Yellow', 'Yellow', 'Red', 'White', 'Red']}
+# df = pd.DataFrame(data)
+# df = categorical_to_binary(df, 'Color')
+# print(df)
+
+
+
+
 
 def split_string(encodings, div):
     r_ind=[]
